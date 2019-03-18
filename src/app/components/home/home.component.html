@@ -1,0 +1,6 @@
+<app-loading *ngIf="loading"></app-loading>
+<div *ngIf="error" class="alert alert-danger animated fadeIn">
+    <h3><i class="fas fa-exclamation-circle"></i>Error</h3>
+    <p><i class="far fa-comments"></i> {{ mensajeError }}</p>
+</div>
+<app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
